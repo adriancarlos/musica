@@ -46,7 +46,7 @@ function crearDetallePedido($linea, $key, $value, $conn){
 
 /*funcion que consulta la ultima linea del pedido*/
 function lineaPedido($conn){
-	$selectLineaPedido = "SELECT MAX(InvoiceLineId) FROM Invoiceline;";
+	$selectLineaPedido = "SELECT MAX(InvoiceLineId) FROM InvoiceLine;";
 	$linea = mysqli_query($conn, $selectLineaPedido);
 	$ultimaLinea = mysqli_fetch_array($linea, MYSQLI_NUM);
 	$dato = $ultimaLinea[0];
