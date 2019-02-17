@@ -33,7 +33,7 @@ function crearDetallePedido($linea, $key, $value, $conn){
 	$details = mysqli_fetch_array($detalles, MYSQLI_NUM);
 
 	/*LLAMAMOS A LA VARIABLE GLOBAL numeroPedido*/
-	$sentenciaDetalle = mysqli_prepare($conn, "INSERT INTO Invoiceline (InvoiceLineId, InvoiceId, TrackId, UnitPrice, Quantity) VALUES (?,?,?,?,?);");
+	$sentenciaDetalle = mysqli_prepare($conn, "INSERT INTO InvoiceLine (InvoiceLineId, InvoiceId, TrackId, UnitPrice, Quantity) VALUES (?,?,?,?,?);");
 	mysqli_stmt_bind_param($sentenciaDetalle, 'iiidi', $linea, $GLOBALS['numeroPedido'], $details[0], $details[1], $value);
 	mysqli_stmt_execute($sentenciaDetalle);
 	
