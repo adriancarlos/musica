@@ -41,7 +41,7 @@
 		//lo guarda en el array y lo inserta en la cookie
 		setcookie('carrito', serialize($array), time() + (86400 * 30), "/");
 			
-		// header('Location: ../views/hacerpedidomain.php');
+		header('Location: ../views/hacerpedidomain.php');
 	}
 
 ?>
