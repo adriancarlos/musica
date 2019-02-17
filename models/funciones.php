@@ -49,7 +49,7 @@ function mostrarFechas($conn){
 
 /*funcion que solo muestra las caciones para comprar*/
 function mostrarCanciones($conn){
-	$sql = "SELECT Name FROM track LIMIT 100;";
+	$sql = "SELECT Name FROM Track LIMIT 100;";
 	$resultado = mysqli_query($conn,$sql);
 	while($fila = mysqli_fetch_assoc($resultado)){
 		echo "<option value='".$fila['Name']."'>".$fila['Name']."</option>";
