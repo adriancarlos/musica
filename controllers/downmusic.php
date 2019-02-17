@@ -26,7 +26,7 @@
 		//vuelvo a guardar la cookie actualizada
 		setcookie('carrito', serialize($array), time() + (86400 * 30), "/");
 		
-		// header('Location: ../views/hacerpedidomain.php');
+		header('Location: ../views/hacerpedidomain.php');
 		
 	} else {
 		/*por aqui entra si la array cookie no esta creada, crea la array asocitiva*/
