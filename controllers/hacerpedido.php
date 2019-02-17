@@ -38,7 +38,7 @@
 
 
 		echo "<p style='padding:5px; background-color: green; border: 1px solid red; color: white; width:20%; text-align: center;'><b>El pedido se ha realizado correctamente<b></p>";
-		echo "Su numero de pedido es: <label style='color: red;'><b>".$GLOBALS['numeroPedido']."</b></label>";
+		echo "Su numero de pedido es: <label style='color: red;'><b>".$GLOBALS['numeroPedido']."</b></label><br>";
 		echo "<a href='../views/welcome.php'>VOLVER</a>";
 	
 	setcookie('carrito', '', time() + (86400 * 30), "/");
