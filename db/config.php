@@ -1,5 +1,5 @@
 <?php
-   define('DB_SERVER', '10.128.15.103');
+   define('DB_SERVER', '10.130.171.119');
    define('DB_USERNAME', 'root');
    define('DB_PASSWORD', 'rootroot');
    define('DB_DATABASE', 'appmusic');
